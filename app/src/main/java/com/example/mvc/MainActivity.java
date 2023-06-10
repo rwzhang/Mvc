@@ -19,7 +19,7 @@ import com.hjq.gson.factory.GsonFactory;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    private String  test="测试上传";
+    private String  test="测试上传测试";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
