@@ -3,6 +3,7 @@ package com.example.mvc.network;
 import androidx.annotation.Nullable;
 import androidx.lifecycle.LiveData;
 
+import com.example.mvc.bean.ApiRespond;
 import com.example.mvc.bean.BaseResponse;
 
 import java.lang.annotation.Annotation;
@@ -30,7 +31,7 @@ public class LiveDataCallAdapterFactory extends CallAdapter.Factory{
 
         Class<?> rawType = getRawType(observable);
 
-        if (rawType != BaseResponse.class){
+        if (rawType != ApiRespond.class){
             throw new IllegalArgumentException("type must be a resource");
         }
         if (!(observable instanceof ParameterizedType)) {

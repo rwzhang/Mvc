@@ -21,20 +21,14 @@ android {
 //            shrinkResources true
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "BASE_URL", '"https"'
+            buildConfigField "String", "BASE_URL", '"https://www.wanandroid.com/"'
             buildConfigField "String", "SUB_URL", '"http://192.168.1.246:8989"'
         }
         debug {
 //            shrinkResources true
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "BASE_URL", '"https://api.bbqtime.com.cn/gateway/v2/kabob/"'
-            buildConfigField "String", "SUB_URL", '"http://192.168.1.246:8989"'
-        }
-        pre {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField "String", "BASE_URL", '"http://www.rizin.fun"'
+            buildConfigField "String", "BASE_URL", '"https://www.wanandroid.com/"'
             buildConfigField "String", "SUB_URL", '"http://192.168.1.246:8989"'
         }
     }

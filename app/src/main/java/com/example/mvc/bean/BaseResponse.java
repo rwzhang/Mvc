@@ -9,13 +9,33 @@ public  class BaseResponse<T> {
     private Integer code;
     private String message;
     private Boolean success;
-    private List<T> data;
+    /** 返回码 */
+    private int errorCode;
+    /** 提示语 */
+    private String errorMsg;
+    private T data;
 
-    public List<T> getData() {
+    public int getErrorCode() {
+        return errorCode;
+    }
+
+    public void setErrorCode(int errorCode) {
+        this.errorCode = errorCode;
+    }
+
+    public String getErrorMsg() {
+        return errorMsg;
+    }
+
+    public void setErrorMsg(String errorMsg) {
+        this.errorMsg = errorMsg;
+    }
+
+    public T getData() {
         return data;
     }
 
-    public void setData(List<T> data) {
+    public void setData(T data) {
         this.data = data;
     }
 
