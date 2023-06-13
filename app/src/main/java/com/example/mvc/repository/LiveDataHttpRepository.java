@@ -1,19 +1,17 @@
-package com.example.mvc.network;
+package com.example.mvc.repository;
 
 import androidx.lifecycle.LifecycleOwner;
-import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-import androidx.lifecycle.Observer;
 
-import com.example.mvc.MainActivity;
-import com.example.mvc.bean.ApiRespond;
 import com.example.mvc.bean.BaseResponse;
 import com.example.mvc.bean.GetBean;
 import com.example.mvc.bean.PostBean;
+import com.example.mvc.network.BasseObserver;
+import com.example.mvc.repository.BaseRepository;
 
 import java.util.List;
 
-public class LiveDataHttpRepository extends BaseRepository {
+public class LiveDataHttpRepository extends BaseRepository.BaseRepository {
      public MutableLiveData<List<GetBean>> liveDataResult=new MutableLiveData<>();
      public MutableLiveData<PostBean> livedataPost=new MutableLiveData<>();
     public void getLiveDataHttps(LifecycleOwner owner){

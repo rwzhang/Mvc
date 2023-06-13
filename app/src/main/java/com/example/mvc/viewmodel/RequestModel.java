@@ -1,10 +1,14 @@
-package com.example.mvc.network;
+package com.example.mvc.viewmodel;
 
 import androidx.lifecycle.LifecycleOwner;
 
 import com.example.mvc.bean.BaseResponse;
 import com.example.mvc.bean.GetBean;
 import com.example.mvc.bean.PostBean;
+import com.example.mvc.network.BaseObserver;
+import com.example.mvc.network.ResultListener;
+import com.example.mvc.network.RetrofitClient;
+import com.example.mvc.network.RxHelper;
 
 import java.util.List;
 

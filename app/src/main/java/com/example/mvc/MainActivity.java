@@ -4,22 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.util.Log;
 
-import com.example.mvc.bean.BaseResponse;
 import com.example.mvc.bean.GetBean;
 import com.example.mvc.bean.PostBean;
-import com.example.mvc.bean.UrlsBean;
-import com.example.mvc.network.BaseObserver;
-import com.example.mvc.network.BasseObserver;
-import com.example.mvc.network.LiveDataHttpRepository;
-import com.example.mvc.network.RequestModel;
+import com.example.mvc.repository.LiveDataHttpRepository;
+import com.example.mvc.viewmodel.RequestModel;
 import com.example.mvc.network.ResultListener;
-import com.example.mvc.network.RetrofitClient;
 import com.google.gson.Gson;
-import com.hjq.gson.factory.GsonFactory;
 
 import java.util.List;
 
